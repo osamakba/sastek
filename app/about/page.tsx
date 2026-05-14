@@ -135,7 +135,7 @@ export default function AboutPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "1.5rem" }}>
             {[
 
-            ].map(m => (
+            ].map((m: { name: string; role: string; emoji: string }) => (
               <div key={m.name} style={{ padding: "2rem", borderRadius: "16px", background: "#f8faff", border: "1px solid #e8f0fe", transition: "all .3s ease" }}
                 onMouseEnter={e => { e.currentTarget.style.borderColor = "rgba(14,165,233,.3)"; e.currentTarget.style.transform = "translateY(-4px)"; }}
                 onMouseLeave={e => { e.currentTarget.style.borderColor = "#e8f0fe"; e.currentTarget.style.transform = "translateY(0)"; }}>
