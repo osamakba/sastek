@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import Anthropic from "@anthropic-ai/sdk";
 
 const client = new Anthropic({
-  apiKey: "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",
+apiKey: process.env.ANTHROPIC_API_KEY,
 });
 
 const SYSTEM_PROMPT = [
