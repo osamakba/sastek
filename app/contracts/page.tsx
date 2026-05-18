@@ -78,7 +78,7 @@ export default function ContractsPage() {
         </Link>
         <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
           <span style={{ color: "#64748b", fontSize: ".85rem", fontWeight: "600" }}>⚖️ تحليل العقود</span>
-          <UserButton afterSignOutUrl="/" />
+          <UserButton />
         </div>
       </header>
 
